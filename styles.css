@@ -1,0 +1,65 @@
+h1{
+    
+    
+    margin-left: 42px;
+    padding-top: 16px;
+
+
+    font-family: 'Rochester';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+}
+#shopping-cart{
+    
+    width: 80px;
+    height: 81px;
+}
+
+#banner{
+    
+    width: 1440px;
+    height: 344px;
+    left: 0px;
+    top: 149px;
+}
+
+#menu{
+    
+width: 1440px;
+height: 81px;
+left: 0px;
+top: 514px;
+
+background: #333A40;
+}
+
+
+
+h2.no-selected{
+padding-left: 53px;
+padding-top: 27px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+
+color: #FFFFFF;
+}
+
+h2.selected{
+    
+    padding-left: 53px;
+    padding-top: 27px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    
+    color: #FFFFFF;
+    }
