@@ -85,10 +85,10 @@ function restaurantFunction(array) {
         pPrice.textContent = "$" + item.price;
 
         let buttonAdd = document.createElement("a");
-        buttonAdd.className = "btn btn-dark btn-item";
+        buttonAdd.className = "btn btn-warning btn-item";
         buttonAdd.setAttribute("type", "button");
         buttonAdd.setAttribute("id", "button-" + category + "-" + item.name);
-        buttonAdd.textContent = "Add to card";
+        buttonAdd.textContent = "Add to cart";
 
         buttonAdd.addEventListener("click", function () {
           countItems(item, quantity);
@@ -184,7 +184,7 @@ function restaurantFunction(array) {
       let tdButtons = document.createElement("td");
 
       let buttonAdd = document.createElement("a");
-      buttonAdd.className = "btn btn-dark btn-row";
+      buttonAdd.className = "btn btn-warning btn-row";
       buttonAdd.textContent = "+";
 
       buttonAdd.addEventListener("click", function () {
@@ -195,7 +195,7 @@ function restaurantFunction(array) {
       });
 
       let buttonLess = document.createElement("a");
-      buttonLess.className = "btn btn-dark btn-row";
+      buttonLess.className = "btn btn-warning btn-row";
       buttonLess.textContent = "-";
 
       buttonLess.addEventListener("click", function () {
@@ -245,7 +245,7 @@ function restaurantFunction(array) {
     buttonCancel.textContent = "Cancel";
     buttonCancel.setAttribute("data-target", "#cancelModal");
     buttonCancel.setAttribute("data-toggle", "modal");
-    
+
     let buttonConfirm = document.createElement("a");
     buttonConfirm.className = "btn btn-success btn-order";
     buttonConfirm.textContent = "Confirm order";
