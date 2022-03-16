@@ -207,7 +207,7 @@ function restaurantFunction(array) {
         }
         if (tdQty.textContent === "0") {
           tr.innerHTML = "";
-          descountItems();
+          discountItems();
         }
       });
 
@@ -320,9 +320,9 @@ function countItems(item, quantity) {
 }
 
 /**
- * Descount of the items
+ * Discount of the items
  */
-function descountItems() {
+function discountItems() {
   itemCar.textContent = numItems - 1 + " items";
 }
 
