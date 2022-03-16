@@ -10,7 +10,7 @@ const urlGithub =
 fetch(urlGithub)
   .then((res) => res.json())
   .then(restaurantFunction);
-let a = [];
+let arr = [];
 
 /**
  * Function for restaurant
@@ -22,11 +22,11 @@ function restaurantFunction(array) {
   array.forEach((foodCategories) => {
     let li = document.createElement("li");
     li.className = "nav-item ";
-    let a = document.createElement("a");
-    a.className = "nav-link";
-    a.textContent = foodCategories.name;
+    let arr = document.createElement("a");
+    arr.className = "nav-link";
+    arr.textContent = foodCategories.name;
 
-    li.appendChild(a);
+    li.appendChild(arr);
     listCategories.appendChild(li);
   });
 
@@ -58,25 +58,32 @@ function restaurantFunction(array) {
       }
 
       listCategory.products.forEach((item) => {
+
         let divCard = document.createElement("div");
         divCard.className = "card cardItem";
         divCard.setAttribute("style", "width: 18rem;");
+
         let imgCard = document.createElement("img");
         imgCard.className = "card-img-top imgFood";
         imgCard.setAttribute("src", item.image);
         imgCard.setAttribute("alt", item.name);
+
         let divCardBody = document.createElement("div");
         divCardBody.className = "card-body";
+
         let h5 = document.createElement("h5");
         h5.className = "card-title";
         h5.textContent = item.name;
+
         let pDescription = document.createElement("p");
         pDescription.className = "card-text";
         pDescription.textContent = item.description;
+
         let pPrice = document.createElement("p");
         pPrice.className = "card-text";
         pPrice.setAttribute("id", "itemPrice");
         pPrice.textContent = "$" + item.price;
+
         let buttonAdd = document.createElement("a");
         buttonAdd.className = "btn btn-dark btn-item";
         buttonAdd.setAttribute("type", "button");
@@ -109,6 +116,9 @@ function restaurantFunction(array) {
 
   let tableHead = false;
 
+  /**
+   * Main treatments for the car items
+   */
   document.getElementById("carItems").addEventListener("click", function () {
     tableItems.innerHTML = "";
     optionsItems.innerHTML = "";
@@ -154,17 +164,23 @@ function restaurantFunction(array) {
 
     quantity.forEach((element) => {
       let tr = document.createElement("tr");
+
       let thIndex = document.createElement("th");
       thIndex.setAttribute("scope", "col");
       thIndex.textContent = index;
+
       let tdQty = document.createElement("td");
       tdQty.textContent = element.quantity;
+
       let tdDescription = document.createElement("td");
       tdDescription.textContent = element.food;
+
       let tdUnitPrice = document.createElement("td");
       tdUnitPrice.textContent = element.unitPrice;
+
       let tdAmount = document.createElement("td");
       tdAmount.textContent = element.amount;
+
       let tdButtons = document.createElement("td");
 
       let buttonAdd = document.createElement("a");
@@ -212,20 +228,24 @@ function restaurantFunction(array) {
 
     let divRow = document.createElement("div");
     divRow.className = "row";
+
     let divSpan = document.createElement("div");
     divSpan.className = "col";
     spanTotal = document.createElement("span");
     spanTotal.textContent = "Total: $" + total;
     spanTotal.setAttribute("id", "spanTotalItems");
     divSpan.appendChild(spanTotal);
+
     let divbuttons = document.createElement("div");
     divbuttons.className = "col d-flex justify-content-end";
     divbuttons.setAttribute("id", "divbuttons");
+
     let buttonCancel = document.createElement("button");
     buttonCancel.className = "btn btn-danger btn-order";
     buttonCancel.textContent = "Cancel";
     buttonCancel.setAttribute("data-target", "#cancelModal");
     buttonCancel.setAttribute("data-toggle", "modal");
+    
     let buttonConfirm = document.createElement("a");
     buttonConfirm.className = "btn btn-success btn-order";
     buttonConfirm.textContent = "Confirm order";
@@ -266,6 +286,7 @@ function restaurantFunction(array) {
 
 let numItems = 0;
 let itemCar = document.getElementById("itemsAdd");
+
 /**
  * Clear shopping car
  */
