@@ -1,65 +1,90 @@
-h1{
-    
-    
-    margin-left: 42px;
-    padding-top: 16px;
-
-
-    font-family: 'Rochester';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 62px;
-}
-#shopping-cart{
-    
-    width: 80px;
-    height: 81px;
+#navbarConfig {
+  height: 4em;
 }
 
-#banner{
-    
-    width: 1440px;
-    height: 344px;
-    left: 0px;
-    top: 149px;
+#listCategories {
+  padding-left: 53px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
 }
 
-#menu{
-    
-width: 1440px;
-height: 81px;
-left: 0px;
-top: 514px;
-
-background: #333A40;
+#CarritoCompras {
+  width: 45px;
+  height: 45px;
 }
 
-
-
-h2.no-selected{
-padding-left: 53px;
-padding-top: 27px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-
-color: #FFFFFF;
+#banner {
+  width: 100%;
 }
 
-h2.selected{
-    
-    padding-left: 53px;
-    padding-top: 27px;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration-line: underline;
-    
-    color: #FFFFFF;
-    }
+#containerCards {
+  padding: 2em;
+}
+
+#itemsAdd {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-left: 1em;
+  padding-right: 1.5em;
+  font-size: 17px;
+}
+
+#titleRestaurant {
+  font-family: "Rochester";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62px;
+  padding-left: 35px;
+}
+
+#shopping-cart {
+  width: 80px;
+  height: 81px;
+}
+
+.imgFood {
+  margin-top: 1em;
+  height: 12em;
+}
+
+#itemPrice {
+  font-weight: bold;
+}
+
+#divButtoms {
+  margin-right: 1em;
+}
+
+#spanTotalItems {
+  font-weight: bold;
+}
+
+#footerText {
+  font-weight: bold;
+}
+
+.btn-row {
+  margin-left: 0.7em;
+}
+
+.btn-border {
+  border: 1px gray solid;
+}
+
+.cardItem {
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+.btn-order {
+  margin-left: 0.5em;
+  border: 1px gray solid;
+}
