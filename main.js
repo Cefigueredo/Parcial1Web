@@ -227,7 +227,7 @@ function restaurantFunction(array) {
     buttonCancel.setAttribute("data-target", "#cancelModal");
     buttonCancel.setAttribute("data-toggle", "modal");
     let buttonConfirm = document.createElement("a");
-    buttonConfirm.className = "btn btn-light btn-order";
+    buttonConfirm.className = "btn btn-success btn-order";
     buttonConfirm.textContent = "Confirm order";
 
     buttonConfirm.addEventListener("click", function () {
